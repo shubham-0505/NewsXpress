@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <title>NewsXpress</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container container flex">
+            <a href="#" onclick="reload()" class="logo">
+                <img src="./images/logo.png" alt="Logo" >
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav-items" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="nav-items" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="nav-items" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" name="input-text" id="input-text" placeholder="e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+           
+        </div>
+    </main>
+
+    <template id="news-template">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="News Image" id="news-image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is title</h3>
+                <h5 id="news-source">Dated 20/6/23</h5>
+                <p id="news-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum itaque deleniti porro incidunt odit tempore rerum nam, eum minima nobis?</p>
+            </div>
+        </div>
+    </template>
+    <script src="./main.js"></script>
+</body>
+</html>
