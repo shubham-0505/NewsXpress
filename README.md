@@ -1,1 +1,1 @@
-A News Website called that fetches upto 10 real-time News articles including News Image, News Source and News Description.
+A News Website called that fetches upto 10 real-time News articles including News Image, News Source and News Description
